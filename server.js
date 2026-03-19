@@ -1,5 +1,6 @@
 import express from "express";
 import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
+console.log("ACCOUNT ID:", process.env.R2_ACCOUNT_ID);
 
 const app = express();
 const s3 = new S3Client({
