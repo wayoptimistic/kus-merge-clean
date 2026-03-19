@@ -4,7 +4,7 @@ import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
 const app = express();
 const s3 = new S3Client({
   region: "auto",
-  endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
+  endpoint: "https://8751adfdd513061b3b6c5629089775d0.r2.cloudflarestorage.com",
   credentials: {
     accessKeyId: process.env.R2_ACCESS_KEY,
     secretAccessKey: process.env.R2_SECRET_KEY,
